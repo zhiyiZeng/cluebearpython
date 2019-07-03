@@ -71,7 +71,9 @@ from PIL import Image
 import numpy as np
 
 mask = np.array(Image.open(os.path.join(path, "火锅图片.png")))
-wc = WordCloud(font_path=os.path.join(path, "simkai.ttf"),
+wc = WordCloud(
+                # font_path="http://zengzhiyi1234.xyz/simkai.ttf",
+               font_path=os.path.join(path, "simkai.ttf"),
                background_color="white",
                contour_width=3,
                contour_color='steelblue',
